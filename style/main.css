@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+html {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+body {
+    background-color: #B6B6B6;
+    margin: 0;
+}
+
+.topnav {
+    background-color: #FFDE59;
+    overflow: auto;
+    padding: 14px 16px;
+}
+
+.topnav a {
+    background-color: #B6B6B6;
+    color: #FFDE59;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 30px;
+    transition: 0.25s;
+    opacity: 0.75;
+    margin-inline-start: 5px;
+}
+
+.topnav a:hover {
+    background-color: #B6B6B6;
+    color: #FFDE59;
+    opacity: 1;
+}
+
+.topnav a.active {
+    background-color: #B6B6B6;
+    color: #FFDE59;
+    opacity: 1;
+}
+
+.topnav .account {
+    margin-left: 60px;
+}
+
+navbar {
+    position: relative;
+    text-align: Center;
+}
+
+#bg {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }

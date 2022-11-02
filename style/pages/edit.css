@@ -1,0 +1,59 @@
+.container {
+    max-width: fit-content;
+    background-color: #FFD52D;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h3 {
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 10px 16px;
+    background-color: #FFDE59;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form_group {
+    padding: 10px;
+    display: block;
+}
+
+label {
+    background-color: #FFDE59;
+    text-align: center;
+    display: block;
+    padding: 10px 250px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    color: #000;
+    border: 0px;
+    outline: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+}
+
+.input-text {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+}
+
+.btn {
+    opacity: 0.75;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 100px;
+    margin: 0 auto;
+    background-color: #FFDE59;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
