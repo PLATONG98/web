@@ -34,6 +34,7 @@ $conn->close();
                 <th>รูปภาพ</th>
                 <th>ชื่อ</th>
                 <th>ประเภท</th>
+                <th>สถานะ</th>
                 <th>ผู้แต่ง</th>
                 <th colspan="2">ดำเนินการ</th>
             </tr>
@@ -42,6 +43,7 @@ $conn->close();
                     <td><img src="<?php echo $rows['Image']; ?>" height="150"></td>
                     <td><?php echo $rows['Name']; ?></td>
                     <td><?php echo $rows['Type']; ?></td>
+                    <td><?php echo $rows['Status']; ?></td>
                     <td><?php echo $rows['Author']; ?></td>
                     <td class="delete"><?php echo "<a href='process/delete.php?id=" . $rows['ID'] . "'>ลบ</a>"; ?></td>
                     <td class="update"><?php echo "<a href='edit.php?id=" . $rows['ID'] . "'> แก้ไข</a>"; ?></td>

@@ -23,8 +23,10 @@ h3 {
 label {
     background-color: #FFDE59;
     text-align: center;
-    display: block;
-    padding: 10px 250px;
+    justify-content: center;
+    padding: 10px 25px;
+    width:90px;
+    display: inline-flex;
     margin-bottom: 10px;
     font-weight: bold;
 }

@@ -42,7 +42,7 @@ $conn->close();
                     <td  class="type"><?php echo $rows['Type']; ?></td>
                     <td  class="author"><?php echo $rows['Author']; ?></td>
                     <td class="action"><a href="./lists.php">กลับ</a></td>
-                    <td class="action"><a href="./process/borrowing.php">ดำเนินการต่อ</a></td>
+                    <td class="action"><?php echo "<a href='./borrowing.php?id=" . $rows['ID'] . "'>ยืม</a>"; ?> </td>
                 </tr>
             <?php } ?>
         </table>

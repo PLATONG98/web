@@ -32,16 +32,18 @@ $result = $conn->query($sql);
                 <th>รูปภาพ</th>
                 <th>ชื่อ</th>
                 <th>ประเภท</th>
+                <th>สถานะ</th>
                 <th>ผู้แต่ง</th>
                 <th>ดำเนินการ</th>
             </tr>
             <?php while ($rows = $result->fetch_assoc()) { ?>
                 <tr>
-                    <td><img src="<?php echo $rows['Image']; ?>" height="125"></td>
+                    <td><img src="<?php echo $rows['Image']; ?>" height="125px"></td>
                     <td><?php echo $rows['Name']; ?></td>
                     <td><?php echo $rows['Type']; ?></td>
+                    <td><?php echo $rows['Status']; ?></td>
                     <td><?php echo $rows['Author']; ?></td>
-                    <?php echo "<td class='action'><a href='borrow.php?id=" . $rows['ID'] . "'>ยืมหนังสือ</a></td>"; ?>
+                    <?php if ($rows['Status'] == "Ready"){echo "<td class='action'><a href='borrow.php?id=" . $rows['ID'] . "'>ยืมหนังสือ</a></td>"; } ?>
                 </tr>
             <?php }
             $conn->close(); ?>

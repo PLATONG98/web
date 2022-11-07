@@ -10,7 +10,8 @@ td {
     color: #000;
     background-color: #FFDE59;
     font-weight: bold;
-    padding: 10px 75px;
+    padding: 5px 25px;
+    display: inline-flexbox;
     text-align: center;
 }
 
